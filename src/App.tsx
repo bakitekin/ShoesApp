@@ -3,6 +3,7 @@ import Header from "./Components/Header";
 import Home from "./pages/Home/index";
 import Detail from "./pages/Detail";
 
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -10,6 +11,7 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+
           <Route path="/detail/:id" element={<Detail />} />
         </Routes>
       </div>
