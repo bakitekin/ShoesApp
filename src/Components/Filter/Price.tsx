@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react"; // React ve gerekli hook'ları import ediyoruz
 import { useSearchParams } from "react-router-dom"; // URL'deki arama parametrelerini almak ve ayarlamak için useSearchParams hook'unu import ediyoruz
 
-type Props = {
+type PriceProps = {
   price: string; // price, string türünde bir prop
   setPrice: React.Dispatch<React.SetStateAction<string>>; // setPrice, string türünde state güncelleme fonksiyonu
 };
 
-const Fiyat = ({ price, setPrice }: Props) => {
+const Fiyat = ({ price, setPrice }: PriceProps) => {
   const [params, setParams] = useSearchParams(); // URL arama parametrelerini almak ve ayarlamak için kullanılır
 
   useEffect(() => {

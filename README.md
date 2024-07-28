@@ -1,16 +1,31 @@
 ## Teknolojiler
 
-react
-typescript
+React
+TypeScript
+Tailwind CSS
+Axios
+JSON Server
+React Router DOM
+React Query
+React Toastify
+React Icon
 
 ## Kütüphaneler
 
 react-router-dom
 tailwind
 axios
-json-server
+npm i json-server@0.17.4
 @tanstack/react-query
 react-toastify
+npm install react-icons
+
+## Running the Project
+
+Start JSON Server: npx json-server --watch db.json --port 7070
+
+Start the React application:npm start
+
 
 ## Uygulanan Tasarım
 

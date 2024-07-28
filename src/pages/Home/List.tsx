@@ -30,10 +30,12 @@ const List = () => {
         <Error message={(error as Error).message} /> // Hata varsa Error bileşenini gösteriyoruz
       ) : data ? ( // Veri durumunu kontrol ediyoruz
         data.length === 0 ? ( // Veri var ama uzunluğu 0 ise
-          <p>
-            Aradığınız kriterlere uygun ürün bulunamadı. <br /> Lütfen farklı
-            filtrelemeler deneyin veya daha sonra tekrar deneyiniz.
-          </p>
+          <div className=" bg-red text-white rounded text-center p-40">
+            <p className="font-semibold size-full ">
+              Aradığınız kriterlere uygun ürün bulunamadı. <br /> Lütfen farklı
+              filtrelemeler deneyin veya daha sonra tekrar deneyiniz.
+            </p>
+          </div>
         ) : (
           // Veri var ve uzunluğu 0 değilse
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-6">

@@ -1,7 +1,7 @@
 import { useSearchParams } from "react-router-dom"; // URL'deki arama parametrelerini almak ve ayarlamak için useSearchParams hook'unu import ediyoruz
 import Color from "./Color"; // Color bileşenini import ediyoruz
-import Gender from "./Gender"; // Gender bileşenini import ediyoruz
-import Price from "./Price"; // Price bileşenini import ediyoruz
+import Gender from "../../Components/Filter/Gender"; // Gender bileşenini import ediyoruz
+import Price from "../../Components/Filter/Price"; // Price bileşenini import ediyoruz
 import Size from "./Size"; // Size bileşenini import ediyoruz
 import { useState } from "react"; // useState hook'unu import ediyoruz
 
@@ -34,6 +34,26 @@ const Filter = ({ isOpen, close }: Props) => {
     setValue("0"); // Price state'ini "0" yapar
   };
 
+  // Filtreleri uygulayan fonksiyon
+  const handleOk = () => {
+    const newParams: any = {};
+
+    if (size.length > 0) {
+      newParams.size = size.join(",");
+    }
+    if (color.length > 0) {
+      newParams.color = color.join(",");
+    }
+    if (gender.length > 0) {
+      newParams.gender = gender.join(",");
+    }
+    if (value !== "0") {
+      newParams.price = value;
+    }
+
+    setParams(newParams);
+  };
+
   return (
     <div
       className={`${
@@ -44,11 +64,9 @@ const Filter = ({ isOpen, close }: Props) => {
     >
       <div className="max-lg:max-w-lg max-lg:mx-auto max-lg:h-[80vh]">
         <h2 className="text-xl font-semibold max-lg:bg-white max-lg:flex max-lg:justify-between max-lg:p-4 rounded-t-md">
-          Filtreler
+          Filteler
           <button className="lg:hidden" onClick={close}>
-            {" "}
-            {/* Bileşeni kapatma butonu */}
-            <span className="text-red font-semibold">X</span>
+            {/* Bileşeni kapatma butonu */}X
           </button>
         </h2>
 
@@ -59,13 +77,17 @@ const Filter = ({ isOpen, close }: Props) => {
           <Gender selected={gender} setSelected={setGender} />{" "}
           {/* Gender bileşeni */}
           <Price value={value} setValue={setValue} /> {/* Price bileşeni */}
-          <button className="border p-2 rounded-lg hover:bg-blue outline-transparent hover:text-white transition">
-            Filtrele {/* Filtreleme butonu */}
+          <button
+            type="button"
+            onClick={handleOk}
+            className="border p-2 rounded-lg hover:bg-yellow outline-transparent hover:text-black transition"
+          >
+            Uygula {/* Filtreleme butonu */}
           </button>
           <button
-            className="border p-2 rounded-lg hover:bg-red hover:text-white transition"
             type="reset"
             onClick={handleReset} // Filtreleri sıfırlayan fonksiyon
+            className="border p-2 rounded-lg hover:bg-dark hover:text-white transition"
           >
             Sıfırla {/* Sıfırlama butonu */}
           </button>

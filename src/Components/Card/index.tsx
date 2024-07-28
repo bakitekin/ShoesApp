@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"; // Link bileşenini react-router-dom'dan import ediyoruz
 import { Shoe } from "../../types"; // Shoe tipini import ediyoruz
-import Badge from "./Badge"; // Badge bileşenini import ediyoruz
+import Badge from "./Badge"; // Badge bileşenini import ediyoruz, indirim rozetini göstermek için kullanılıyor
 import calcDiscount from "../../utils/calcDiscount"; // İndirimli fiyat hesaplama fonksiyonunu import ediyoruz
 
 type Props = {
@@ -8,16 +8,17 @@ type Props = {
 };
 
 const Card = ({ item }: Props) => {
-  const price = calcDiscount(item.price, item.discount); // İndirimli fiyatı hesaplıyoruz
+  // İndirimli fiyatı hesaplıyoruz
+  const price = calcDiscount(item.price, item.discount);
 
   return (
     <div className="flex flex-col justify-between">
       <div>
         <div className="bg-white rounded-[16px] lg:rounded-[28px] p-[8px]">
           <div className="relative rounded-[12px] lg:rounded-[24px]">
-            <Badge discount={item.discount} />{" "}
+            <Badge discount={item.discount} />
             {/* İndirim rozetini gösteriyoruz */}
-            <img src="/shoe.png" alt={item.name} /> {/* Ürün resmi */}
+            <img src="/shoe.png" /> {/* Ürün resmi */}
           </div>
         </div>
 

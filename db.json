@@ -33,7 +33,7 @@
       "name": "NEW BALANCE FUELCELL PRISM",
       "picture": [
         "/public/nike/b/b1.png",
-        "/public/nike/b/b2.png",
+        "/public/nike/b/b2.jpeg",
         "/public/nike/b/b3.png",
         "/public/nike/b/b4.png"
       ],
@@ -48,15 +48,15 @@
       "id": "shoe4",
       "name": "ASICS GEL-NIMBUS 23",
       "picture": [
-        "/public/nike/c/c1.png",
+        "/public/nike/c/c1.jpeg",
         "/public/nike/c/c2.png",
         "/public/nike/c/c3.png",
-        "/public/nike/c/c4.png"
+        "/public/nike/c/c4.jpeg"
       ],
       "description": "Midnight / Champagne <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
       "isNew": false,
       "size": "40,42,43",
-      "color": "blue,brown",
+      "color": "blue,brown,gray",
       "gender": "women",
       "price": 300
     },
@@ -64,9 +64,9 @@
       "id": "shoe5",
       "name": "SAUCONY ENDORPHIN SPEED",
       "picture": [
-        "/public/nike/d/d1.png",
-        "/public/nike/d/d2.png",
-        "/public/nike/d/d3.png",
+        "/public/nike/d/d1.jpeg",
+        "/public/nike/d/d2.jpeg",
+        "/public/nike/d/d3.jpeg",
         "/public/nike/d/d4.png"
       ],
       "description": "Black / Gold <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
@@ -89,7 +89,7 @@
       "description": "Blue / White <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
       "isNew": true,
       "size": "39,40,41",
-      "color": "blue,light-gray",
+      "color": "blue,light-gray,white",
       "gender": "women",
       "price": 400
     },
@@ -97,15 +97,15 @@
       "id": "shoe7",
       "name": "HOKA ONE ONE CLIFTON 8",
       "picture": [
-        "/public/nike/f/f1.png",
-        "/public/nike/f/f2.png",
-        "/public/nike/f/f3.png",
-        "/public/nike/f/f4.png"
+        "/public/nike/f/f1.jpeg",
+        "/public/nike/f/f2.jpeg",
+        "/public/nike/f/f3.jpeg",
+        "/public/nike/f/f4.jpeg"
       ],
       "description": "Turquoise / Coral <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
       "isNew": false,
       "size": "40,41,43",
-      "color": "green,orange",
+      "color": "green,orange,black",
       "gender": "men",
       "price": 450
     },
@@ -121,7 +121,7 @@
       "description": "White / Silver <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
       "isNew": true,
       "size": "39,41,42,46",
-      "color": "gray,white",
+      "color": "gray,white,red",
       "gender": "women",
       "price": 500
     },
@@ -131,14 +131,14 @@
       "discount": 40,
       "picture": [
         "/public/nike/h/h1.png",
-        "/public/nike/h/h2.png",
+        "/public/nike/h/h2.jpeg",
         "/public/nike/h/h3.png",
         "/public/nike/h/h4.png"
       ],
       "description": "Red / Black <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
       "isNew": false,
       "size": "38,40,43,45",
-      "color": "red,black",
+      "color": "red,black,",
       "gender": "men",
       "price": 550
     },
@@ -147,8 +147,8 @@
       "name": "ALTRA TORIN 5",
       "picture": [
         "/public/nike/j/j1.png",
-        "/public/nike/j/j2.png",
-        "/public/nike/j/j3.png",
+        "/public/nike/j/j2.jpeg",
+        "/public/nike/j/j3.jpeg",
         "/public/nike/j/j4.png"
       ],
       "description": "Gray / Blue <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
@@ -163,7 +163,7 @@
       "name": "REEBOK NANO X1",
       "picture": [
         "/public/nike/k/k1.png",
-        "/public/nike/k/k2.png",
+        "/public/nike/k/k2.jpeg",
         "/public/nike/k/k3.png",
         "/public/nike/k/k4.png"
       ],
@@ -211,7 +211,7 @@
       "name": "MERRELL MOAB 2 VENT",
       "picture": [
         "/public/nike/b/b1.png",
-        "/public/nike/b/b2.png",
+        "/public/nike/b/b2.jpeg",
         "/public/nike/b/b3.png",
         "/public/nike/b/b4.png"
       ],
@@ -226,10 +226,10 @@
       "id": "shoe15",
       "name": "LA SPORTIVA BUSHIDO II",
       "picture": [
-        "/public/nike/c/c1.png",
+        "/public/nike/c/c1.jpeg",
         "/public/nike/c/c2.png",
         "/public/nike/c/c3.png",
-        "/public/nike/c/c4.png"
+        "/public/nike/c/c4.jpeg"
       ],
       "description": "Yellow / Black <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
       "isNew": true,
@@ -240,4 +240,3 @@
     }
   ]
 }
-
