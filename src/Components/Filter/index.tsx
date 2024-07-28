@@ -47,7 +47,7 @@ const Filter = ({ isOpen, close }: Props) => {
         <h2 className="text-xl font-semibold max-lg:bg-white max-lg:flex max-lg:justify-between max-lg:p-4 rounded-t-md">
           Filtreler
           <button className="lg:hidden" onClick={close}>
-            X
+          <span className="text-red font-semibold ">X</span>
           </button>
         </h2>
 
@@ -58,7 +58,12 @@ const Filter = ({ isOpen, close }: Props) => {
           <Price value={value} setValue={setValue} />
 
           <button
-            className="border p-2 rounded-lg hover:bg-dark hover:text-white transition"
+            className="border p-2 rounded-lg hover:bg-blue outline-transparent hover:text-white transition"
+          >
+            Filtrele
+          </button>
+           <button
+            className="border p-2 rounded-lg hover:bg-red  hover:text-white transition"
             type="reset"
             onClick={handleReset}
           >

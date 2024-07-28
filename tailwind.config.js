@@ -11,6 +11,7 @@ export default {
         gray: "#E7E7E3",
         gray_main: "#70706E",
         dark: "#232321",
+        red: "#EF4444"
       },
     },
   },

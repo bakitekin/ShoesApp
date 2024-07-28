@@ -40,7 +40,7 @@ const Gender = ({ selected, setSelected }: SelectedProps) => {
   // Bileşenin JSX yapısını döndürür
   return (
     <div>
-      <h2 className="font-semibold mb-[16px]">Cinsiyet</h2>
+      <h2 className="font-semibold mb-[16px] ">Cinsiyet</h2>
       <div className="flex items-center gap-4">
         <input
           // Kadın cinsiyetini kontrol eder, seçili olup olmadığını belirler
@@ -50,7 +50,7 @@ const Gender = ({ selected, setSelected }: SelectedProps) => {
           id="women"
           type="checkbox"
         />
-        <label htmlFor="women" className="font-semibold select-none">
+        <label htmlFor="women" className="font-semibold select-none cursor-pointer">
           Kadın
         </label>
       </div>
@@ -63,7 +63,7 @@ const Gender = ({ selected, setSelected }: SelectedProps) => {
           id="men"
           type="checkbox"
         />
-        <label htmlFor="men" className="font-semibold select-none">
+        <label htmlFor="men" className="font-semibold select-none cursor-pointer">
           Erkek
         </label>
       </div>
