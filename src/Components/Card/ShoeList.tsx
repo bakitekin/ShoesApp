@@ -13,7 +13,7 @@ const ShoeList = () => {
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
-  console.log(data);
+console.log(shoes);
 
   return (
     <div className="shoe-list">

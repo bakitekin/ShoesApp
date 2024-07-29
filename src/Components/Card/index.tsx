@@ -14,24 +14,30 @@ const Card = ({ item }: Props) => {
   return (
     <div className="flex flex-col justify-between">
       <div>
-        <div className="bg-white rounded-[16px] lg:rounded-[28px] p-[8px]">
-          <div className="relative rounded-[12px] lg:rounded-[24px]">
-            <Badge discount={item.discount} />
-            {/* İndirim rozetini gösteriyoruz */}
-            <img src="/shoe.png" /> {/* Ürün resmi */}
+        <Link to={`/detail/${item.id}`}>
+          <div className="bg-white rounded-[16px] lg:rounded-[28px] p-[8px]">
+            <div className="relative rounded-[12px] lg:rounded-[24px]">
+              <Badge discount={item.discount} />
+              {/* İndirim rozetini gösteriyoruz */}
+              <img
+                className="rounded-[12px] lg:rounded-[24px]"
+                src={item.picture[0]}
+                alt={item.name}
+              />
+              {/* Ürün resmi */}
+            </div>
           </div>
-        </div>
-
-        <h2 className="font-bold line-clamp-2 mt-5 mb-4 lg:text-[20px]">
-          {item.name} {/* Ürün adı */}
-        </h2>
+          <h2 className="font-bold line-clamp-2 mt-5 mb-4 lg:text-[20px]">
+            {item.name} {/* Ürün adı */}
+          </h2>
+        </Link>
       </div>
 
       <Link
         to={`/detail/${item.id}`} // Ürün detay sayfasına yönlendirme
-        className="bg-dark text-white font-medium px-4 py-2 rounded-[8px] transition hover:bg-black "
+        className="bg-dark text-white font-medium px-4 py-2 rounded-[8px] transition hover:bg-black flex justify-between"
       >
-        Ürünü Görüntüle -{" "}
+        Ürünü Görüntüle{" "}
         <span className={item.discount ? "text-orange-400" : "text-white"}>
           ${price} {/* İndirimli veya normal fiyat */}
         </span>

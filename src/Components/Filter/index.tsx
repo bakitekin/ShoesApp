@@ -4,6 +4,7 @@ import Gender from "../../Components/Filter/Gender"; // Gender bileşenini impor
 import Price from "../../Components/Filter/Price"; // Price bileşenini import ediyoruz
 import Size from "./Size"; // Size bileşenini import ediyoruz
 import { useState } from "react"; // useState hook'unu import ediyoruz
+import GoBackButton from "../../pages/Detail/GoBack";
 
 type Props = {
   isOpen: boolean; // Bileşenin açık olup olmadığını belirten boolean
@@ -64,7 +65,7 @@ const Filter = ({ isOpen, close }: Props) => {
     >
       <div className="max-lg:max-w-lg max-lg:mx-auto max-lg:h-[80vh]">
         <h2 className="text-xl font-semibold max-lg:bg-white max-lg:flex max-lg:justify-between max-lg:p-4 rounded-t-md">
-          Filteler
+          Filtreler
           <button className="lg:hidden" onClick={close}>
             {/* Bileşeni kapatma butonu */}X
           </button>
@@ -97,4 +98,4 @@ const Filter = ({ isOpen, close }: Props) => {
   );
 };
 
-export default Filter; // Filter bileşenini dışa aktarıyoruz
+export default Filter;
