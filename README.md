@@ -34,5 +34,5 @@ https://www.figma.com/community/file/1214498651988846999/kicks-shoes-ecommerce-w
 
 ## Proje Gif
 
-<img src= "shoes.gif"  />
+<img src= "./public/shoes.gif"  />
 
