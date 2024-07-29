@@ -30,3 +30,9 @@ Start the React application:npm start
 ## Uygulanan Tasarım
 
 https://www.figma.com/community/file/1214498651988846999/kicks-shoes-ecommerce-website-and-admin-mvp?searchSessionId=ly6ajf7x-vly8vll5xrr
+
+
+## Proje Gif
+
+<img src= "shoes.gif"  />
+
